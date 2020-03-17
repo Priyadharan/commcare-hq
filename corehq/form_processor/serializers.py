@@ -174,7 +174,6 @@ class CommCareCaseSQLSerializer(DeletableModelSerializer):
     _id = serializers.CharField(source='case_id')
     doc_type = serializers.CharField()
     user_id = serializers.CharField(source='modified_by')
-    case_json = serializers.JSONField()
 
     class Meta(object):
         model = CommCareCaseSQL
